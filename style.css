@@ -1,65 +1,68 @@
  *{
 padding: 0px;
-background-color: black;
-color: white;
-}
+margin: 0;
+box-sizing: border-box;
 
+}
+  
 h1{
+    text-align: center;
     
 }
+
+
 h3,span{
     color: rgb(205, 149, 76);
 
 }
+
+
 body{
-    background:linear-gradient(
-    135deg,
-    #000000,
-    #0f0f0f,
-    #1a0000
-    );
-
-    color:white;
-
+    background: url(./portImage.jpg);
+    
+    background-repeat: no-repeat; 
+    background-size: cover;      
+    background-position: center;  
+    background-attachment: fixed; 
+    color:rgb(223, 226, 204);
+    overflow-x: hidden;
     font-family:'Poppins',sans-serif;
-
-    overflow-x:hidden;
-
     scroll-behavior:smooth;
 }
 
 .aside_container{
     width:320px;
     height:95vh;
-
+    overflow-y: auto;
     position:fixed;
     top:10px;
     left:10px;
-
-    overflow-y:auto;
-
-    backdrop-filter: blur(12px);
-
-    background: rgba(255,255,255,0.05);
-
-    border:1px solid rgba(159, 14, 14, 0.3);
-
+    background: rgba(16, 0, 0, 0.05);
+    border:3px solid rgba(159, 14, 14, 0.3);
     border-radius:30px;
-
     padding:20px;
-
     transition:.5s;
 }
+.aside_container:hover{
+    transform: translateY(10px) scale(1) ;
+     box-shadow: 0 10px 25px rgba(255, 0, 0, 0.2);
+}
+
+.social-icons{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    opacity: .5;
+    height: 40px;
+    align-items: center;
+}
+
 
 .aside_container h1{
     color: rgb(161, 10, 10);
 }
 
-.aside_container:hover{
-    transform: translateY(10px) scale(1) ;
-    
-     box-shadow: 0 10px 25px rgba(255, 0, 0, 0.2);
-}
+
 #profile_image{
     width: 150px;
     height: 150px;
@@ -79,6 +82,25 @@ transform: translateY(-10px) scale(1.2);
 }
 
 
+.icons{
+    color: rgb(23, 21, 17);
+    transition: .3s ease;
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234, 194, 75);
+    border-radius: 20px;
+}
+
+.icons:hover{
+    opacity: 1;
+   box-shadow: 0 10px 30px rgba(212, 175, 55, 0.25);
+
+    transform: translateY(5px) scale(1.5) ;
+}
+
 
 .main_container{
     display: flex;
@@ -87,7 +109,8 @@ transform: translateY(-10px) scale(1.2);
     left: 390px;
     top: 10px;
     gap: 20px;
-    box-sizing: border-box;
+     background: rgba(16, 0, 0, 0.05);
+   
 }
 
 
@@ -98,7 +121,8 @@ transform: translateY(-10px) scale(1.2);
     border-radius: 50px;
     width: auto;
     padding: 10px;
-    box-sizing: border-box;
+   transition: .3s ease;
+    background: rgba(16, 0, 0, 0.05);
 }
 .min_container h1:hover{
     color: white;
@@ -108,8 +132,7 @@ transform: translateY(-10px) scale(1.2);
 }
 
 .min_container:hover {
-   
-    transform: translatey(-10px) scale(1);
+    transform: translatey(-10px) scale(1.06);
  box-shadow: rgb(194, 1, 1);
 }
 
